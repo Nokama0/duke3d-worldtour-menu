@@ -1,0 +1,7 @@
+; The game imports XInput BY ORDINAL, so the ordinals are what must match:
+; 2 is XInputSetState and 3 is XInputGetState in XINPUT1_3.dll. The names are
+; here for readability only.
+LIBRARY XINPUT1_3
+EXPORTS
+  XInputSetState = wt_XInputSetState @2
+  XInputGetState = wt_XInputGetState @3
